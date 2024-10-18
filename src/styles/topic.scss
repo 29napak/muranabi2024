@@ -1,0 +1,275 @@
+@use './config/mixins' as mix;
+
+
+
+.TopicPage{
+    padding-bottom: 100px;
+ 
+    &_content{
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        
+        h3{
+            font-size: 32px;
+            font-weight: 700;
+        }
+    }
+    &__notice{
+        padding: 12px;
+        p{
+            font-size: 12px;
+            @include mix.mmq(){
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+    &__title{
+        margin-bottom: 30px;
+        @include mix.mmq(){
+            margin-bottom: 0;
+        }
+    }
+    @include mix.mmq(){
+        padding-bottom: 0px;
+    }
+    .MiryokuHead{
+    .RaceList__header{
+        background: url(https://media.graphassets.com/cf5DJF7oR4eGOfgcDYjQ);
+        background-size: 100%;
+        background-position: 0 70%;
+    }
+}
+
+.CuponPage__container::after{
+    background: #DEE3BE;
+    
+}
+.CuponPage__container{
+ padding-bottom: 50px;
+ padding-top: 20px;
+ overflow: hidden;
+
+ &:last-child{
+  background-color: #fff;
+
+  padding-bottom: 40%;
+  margin-bottom: -40%;
+    @include mix.mmq(){
+        padding-bottom: 30%;
+        margin-bottom: -10%;
+        
+     }
+
+ }
+
+ @include mix.mmq(){
+    padding-bottom: 0;
+    
+ }
+}
+
+
+.RaceList__topimg{
+    margin-top: 0px;
+    background-position: bottom;
+    @include mix.mmq(){
+        padding-top: 9%;
+        margin-top: 2%;
+    }
+    @include mix.xl(){
+        padding-top: 13%;
+    }
+}
+.RaceList__topimg img:last-child{
+    width: 40%;
+    @include mix.mmq(){
+        width: 30%;
+    }
+}
+
+.CuponPage__item{
+    text-align: start;
+ 
+    .homeTopic__vidwrap {
+        position: relative;
+        padding-bottom: 49%;
+        padding-top: 25px;
+        height: 0;
+    }
+
+    @include mix.mmq(){
+        margin-top: 0;
+    }
+    &:first-child{
+        margin-top: 0;
+    }
+    h4{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    &__date{
+        p{
+            margin: 0;
+            color: #707E0D;
+        }
+    }
+}
+.RaceList__topimg__wrap{
+    @include mix.mmq(){
+        padding-top: 0%;
+    }
+}
+
+
+
+.bottom{
+    background-size: 100%;
+    margin-top: -2px;
+    &__wrap{
+        padding-bottom: 15%;
+        top: 25px;
+        @include mix.mmq(){
+            padding-bottom: 0;
+        }
+        img{
+            &:last-child{
+                width: 40%;
+            }
+        }
+    }
+    
+}
+
+
+}
+.CuponPage__section__wrap{
+   position: relative;
+   z-index: 1;
+    @include mix.mmq(){
+        padding-bottom: 100px;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+}
+
+.TopicPage.Campaign{
+    .RaceList__header{
+        background: url(https://media.graphassets.com/t1GnABQdSgSwd7v0G5bL);
+        background-size: 100%;
+        background-position: 0 70%;
+    }
+}
+
+.TopicPage .RaceList__topimg.bottom{
+    background: url(https://media.graphassets.com/yuT2L6ZStmPDNVq7kObU);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.TopicPage.Campaign{
+    .RaceList__topimg__wrap{
+    padding-top: 0%;
+    padding-bottom: 15%;
+    top: 30px;
+    }
+    .CuponPage__container{
+        background: #DEE3BE;
+        padding-bottom: 50px;
+      
+        &:last-child{
+            background: #fff;
+        }
+    }
+    .RaceList__topimg.bottom{
+        margin-top: 0;
+        background-position: top;
+        
+    }
+
+    .RaceList__topimg{
+        margin-top: -30px;
+        img{
+            &:last-child{
+                width: 30%;
+            }
+        }
+    }
+    .CuponPage__item a{
+        background: #DEE3BE;
+    }
+    .CuponPage__item{
+        @include mix.mmq(){
+            margin-top: 0;
+        }
+        &:first-child{
+            margin-top: 0;
+        }
+        margin-top: 50px;
+    }
+    .RaceList__topimg.bottom{
+        .RaceList__topimg__wrap{
+            top: 10px;
+        }
+        img{
+            &:last-child{
+                width: 20%;
+                
+            }
+        }
+    }
+    
+}
+
+.TopicPage .CuponPage__container::after{
+    display: none;
+}
+
+.TopicPage.Campaign {
+
+
+  padding-bottom: 50%;
+  @include mix.mmq(){
+    padding-bottom: 25%;
+  }
+.ComingSoon{
+    margin-top: 90px;
+}
+
+}
+
+
+
+.TopicPage.Campaign .CuponPage__container.white{
+    a{
+        background: #fff;
+    }
+}
+.CuponPage__container.add-margin{
+    margin-top: 50px;
+    background-color: #fff;
+   
+}
+
+.homeTopic__vid{
+    h4{
+        margin-top: 30px;
+    }
+    
+}
+.TopicPage .CuponPage__container.rokugatu{
+    background-color: #DEE3BE;
+}
+.TopicPage .CuponPage__container.rokugatu .ComingSoon{
+    margin-top: 70px;
+}
+.TopicPage .CuponPage__container.rokugatu .ComingSoon img{
+    width: 200px;
+}
+

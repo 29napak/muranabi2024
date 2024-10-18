@@ -1,0 +1,358 @@
+@use './config/mixins' as mix;
+
+.top-btn {
+    background-color: #000000;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 15px 10px;
+        @include mix.mmq(){
+            grid-gap: 20px;
+        }
+    }
+
+    &__btn {
+        display: grid;
+        grid-template-columns: 90% 10%;
+        border: #ffff 1px solid;
+        padding: 10px;
+        height: 100%;
+        align-items: center;
+
+        p {
+            color: #ffff;
+            text-align: center;
+            white-space: nowrap;
+        }
+    }
+}
+.toppage .slide-img .img1{
+   height: auto;
+}
+.toppage {
+    
+    .teaser__hero {
+        padding-bottom: 5%;
+    }
+    .teaser__warp__content{
+        padding: 0 15px 20%;
+        @include mix.mmq(){
+            padding: 0 45px 15%;
+        }
+        @include mix.ml(){
+            padding:0 45px 90px;
+        }
+
+    }
+
+    &__info {
+       
+        padding: 20px 0px;
+        background-color: #C8141D;
+
+        .info__container {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffff;
+            @include mix.mmq(){
+                padding: 40px;
+            }
+        }
+       
+
+        .title {
+            text-align: center;
+            margin-top: 10%;
+            margin-bottom: 7%;
+        }
+
+        .seemore {
+            color: #ffff;
+            position: relative;
+            z-index: 1;
+
+            .myReact-icons {
+                fill: #ffff;
+            }
+        }
+
+        p {
+            color: #000000;
+        }
+    }
+
+    .bt_pc,
+    .bt_sp {
+        img {
+            width: 100%;
+        }
+    }
+
+    .bt_sp {
+        margin-top: -10%;
+        @include mix.mmq(){
+            display: none;
+        }
+    }
+
+    .bt_pc {
+        display: none;
+        margin-top: -120px;
+
+        @include mix.mmq() {
+            margin-bottom: 5%;
+            background-color: #C8141D;
+            margin-top: -10%;
+            position: relative;
+            display: flex;
+            padding-top: 3%;
+
+            img {
+                width: 100%;
+                margin-bottom: -5%;
+
+            }
+        }
+    }
+    .top-topics, .top-cp{
+        padding-bottom: 10%;
+        .title{
+            padding-top: 20%;
+            text-align: center;
+            margin-bottom: 5%;
+            @include mix.mmq{
+                padding-top: 15%;
+            }
+        }
+        .seemore{
+            color: #ffff;
+
+            .myReact-icons {
+                fill: #ffff;
+            }
+        }
+        
+    }
+    .top_pc{
+        display: none;
+        margin-top: -120px;
+        @include mix.ml(){
+            display: block;
+        }
+    }
+    .top_sp,.top_pc{
+        img{
+            width: 100%;
+        }
+     }
+     .top_sp{
+        margin-top: -50px;
+        @include mix.ml(){
+            display: none;
+        }
+     }
+
+     .top-pv{
+        background-color: #C8141D;
+
+        margin-top: -30px;
+
+        .title{
+            text-align: left;
+            margin-left: 5%;
+            p{
+                color: #ffff;
+                font-size: 16px;
+                margin-top: -4%;
+                font-weight: bold;
+                @include mix.mmq(){
+                    font-size: 24px;
+                }
+                
+            }
+        }
+        .seemore{
+            margin-top: 30px;
+        }
+    }
+    .homeTopic__vid{
+        padding: 0;
+    }
+    .top-cp,.top-event{
+        .teaser__warp__content{
+            .HomeCP__item{
+                text-align: center;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        .seemore{
+            margin-top: 30px;
+        }
+    }
+    .top-event{
+        margin-top: -20px;
+        .HomeCP__item{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .top-miryoku{
+        .miryoku{
+            padding: 0;
+        }
+        .seemore{
+            
+            img{
+                width: 100%;
+                margin: 20px auto;
+                @include mix.mmq(){
+                    width: 70%;
+                }
+            }
+        }
+        .title{
+            padding-top: 5%;
+            p{
+                font-size: 22px;
+                font-weight: bold;
+            }
+        }
+    }
+    .box{
+        padding: 15px;
+       
+       p,a{
+        color: #ffff;
+       }
+       &__link{
+        margin-top: 10px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffff;
+        p{
+            color: #000000;
+        }
+       }
+
+    }
+    .top-twitter{
+        padding: 17px;
+        padding-bottom: 0%;
+        @include mix.mmq(){
+            padding-bottom: 10%;
+        }
+        .teaser__warp__content{
+            .title{
+                padding-top: 20%;
+            }
+        }
+    }
+    .link-top{
+        margin-top: 5%;
+        img{
+            width: unset;
+            @include mix.mmq(){
+                width: 300px;
+            }
+        }
+    }
+    .top-topics{
+        .seemore{
+            margin-top: 30px;
+        
+        }
+    }
+  .top-btn{
+    .seemore{
+        margin-top: 10%;
+        text-align: center;
+        img{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+  }
+  .vid-yahiko{
+    margin-bottom: 30px;
+  }
+}
+.HomeLink__wrap{
+    margin-bottom: 5%;
+}
+.toppage .teaser__warp__content.margin10{
+    padding-bottom: 5%;
+}
+
+.info__wrap.toppage{
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 20px;
+    @include mix.mmq(){
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+}
+.title.top-miryoku{
+    img{
+        margin-top: 5%;
+    }
+}
+.box__link{
+    position: relative;
+    z-index: 1;
+}
+.homeTopic__vidwrap__img{
+    img{
+        width: 100%;
+    }
+}
+.homeTopic__text__img{
+margin-top: 30px;
+@media screen  and (min-width:450px){
+    margin-top: 45px;
+}
+@media screen  and (min-width:600px){
+    margin-top: 50px;
+}
+@media screen  and (min-width:650px){
+    margin-top: 40px;
+}
+
+}
+.homeTopic__vid__img{
+    margin-bottom: 40px;
+}
+.toppage .slick-slider{
+    background-color: #000000;
+}
+
+.commingSoon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    
+}
+.teaser__warp__content {
+    .commingSoon{
+        p{
+            padding-top: 40px;
+            font-size: 28px;
+            color: #ffff;
+        }
+    }
+}
+
+.yahiko-x img{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 640px;
+}

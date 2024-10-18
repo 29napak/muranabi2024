@@ -1,0 +1,107 @@
+@use "variables" as var;
+
+@mixin xs($size:ssm,$range:min) {
+    $result: 0;
+    @if(type-of($size) == number) {
+        $result: $size;
+    } @else {
+        $result:map-get(var.$breakpoints,$size)
+    }
+    @if($range == max) {
+        $result: $result + 1;
+    }
+    @media (#{$range}-width:#{$result}){
+        @content;
+    }
+}
+
+@mixin mq($size:sm,$range:min) {
+    $result: 0;
+    @if(type-of($size) == number) {
+        $result: $size;
+    } @else {
+        $result:map-get(var.$breakpoints,$size)
+    }
+    @if($range == max) {
+        $result: $result + 1;
+    }
+    @media (#{$range}-width:#{$result}){
+        @content;
+    }
+}
+@mixin mmq($size:mmd,$range:min) {
+    $result: 0;
+    @if(type-of($size) == number) {
+        $result: $size;
+    } @else {
+        $result:map-get(var.$breakpoints,$size)
+    }
+    @if($range == max) {
+        $result: $result + 1;
+    }
+    @media (#{$range}-width:#{$result}){
+        @content;
+    }
+}
+
+
+
+@mixin ml($size:md,$range:min) {
+    $result: 0;
+    @if(type-of($size) == number) {
+        $result: $size;
+    } @else {
+        $result:map-get(var.$breakpoints,$size)
+    }
+    @if($range == max) {
+        $result: $result + 1;
+    }
+    @media (#{$range}-width:#{$result}){
+        @content;
+    }
+}
+
+@mixin xl($size:xl,$range:min) {
+    $result: 0;
+    @if(type-of($size) == number) {
+        $result: $size;
+    } @else {
+        $result:map-get(var.$breakpoints,$size)
+    }
+    @if($range == max) {
+        $result: $result + 1;
+    }
+    @media (#{$range}-width:#{$result}){
+        @content;
+    }
+}
+
+@mixin xxl($size:xxl,$range:min) {
+    $result: 0;
+    @if(type-of($size) == number) {
+        $result: $size;
+    } @else {
+        $result:map-get(var.$breakpoints,$size)
+    }
+    @if($range == max) {
+        $result: $result + 1;
+    }
+    @media (#{$range}-width:#{$result}){
+        @content;
+    }
+}
+
+@mixin nav($size:nav,$range:min) {
+    $result: 0;
+    @if(type-of($size) == number) {
+        $result: $size;
+    } @else {
+        $result:map-get(var.$breakpoints,$size)
+    }
+    @if($range == max) {
+        $result: $result + 1;
+    }
+    @media (#{$range}-width:#{$result}){
+        @content;
+    }
+}

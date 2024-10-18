@@ -1,0 +1,729 @@
+@use './config/mixins' as mix;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500;700&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+.teaser {
+    padding-bottom: 0%;
+    background: url(https://media.graphassets.com/SpDF5hvwSpaADEl6ISU5);
+    background-size: contain;
+
+    .MiryokuHead .RaceList__header{
+        background: url(https://media.graphassets.com/ZNVUvaURWiXZ7RF3ApHg);
+        background-size: contain;
+        background-color: #000000;
+        margin-bottom: 30%;
+        font-family: "Zen Kaku Gothic";
+        h3{
+            font-family: "Zen Kaku Gothic";
+        }
+        p{
+            font-family: "Zen Kaku Gothic";
+        }
+        @include mix.mmq(){
+            margin-bottom: 0;
+            background-size: cover;
+            background-position: 100% 50%;
+        }
+    }
+    &__hero {
+        background-color: black;
+        padding-bottom: 70px;
+
+        @include mix.ml() {
+            padding-bottom: 170px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .top_pc,
+    .bt_pc {
+        display: none;
+        margin-top: -100px;
+
+        @include mix.ml() {
+            display: block;
+        }
+    }
+
+    .top_sp,
+    .bt_sp,
+    .top_pc,
+    .bt_pc {
+        img {
+            width: 100%;
+        }
+    }
+
+    .top_sp {
+        margin-top: -50px;
+
+        @include mix.ml() {
+            display: none;
+        }
+    }
+
+    .bt_sp {
+        margin-top: -35%;
+    position: relative;
+
+        @include mix.ml() {
+            display: none;
+        }
+    }
+
+    &__warp {
+        background: url(https://media.graphassets.com/4ps0TEqeTqMdET0bk9ez);
+        background-size: cover;
+        margin-top: -10%;
+
+        @include mix.ml() {
+            margin-top: -20px;
+            background: url(https://media.graphassets.com/zDJrZ09RRd65se2hmSCT);
+            background-color: #C8141D;
+            background-size: contain;
+        }
+
+        @include mix.xl() {
+            margin-top: -35px;
+            background-size: cover;
+        }
+
+
+        &__content {
+
+            padding: 0 45px 35%;
+            max-width: 750px;
+            margin: 0 auto;
+
+            @include mix.ml() {
+                padding-bottom: 8%;
+            }
+
+            p {
+                font-family: "Zen Kaku Gothic";
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 28px;
+                color: #fff;
+
+                @include mix.ml() {
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        &__title {
+            img {
+                margin-top: 70px;
+                margin-bottom: 30px;
+
+                @include mix.ml() {
+                    margin-bottom: 50px;
+                }
+
+            }
+
+            @include mix.ml() {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+
+}
+
+.TSpage {
+    .HomeLink {
+        margin-top: 20%;
+
+        @include mix.mmq() {
+            margin-top: 15%;
+        }
+
+        @include mix.ml {
+            margin-top: 0%;
+            padding-bottom: 0%;
+        }
+
+    }
+}
+
+
+
+
+.teaser {
+
+
+    &__warp2 {
+        background: url(https://media.graphassets.com/SpDF5hvwSpaADEl6ISU5);
+        background-size: contain;
+        margin-top: -10%;
+
+        @include mix.ml() {
+            margin-top: -5%;
+        }
+
+
+
+        &__content {
+
+            padding: 0 45px 15%;
+            max-width: 750px;
+            margin: 0 auto;
+
+            @include mix.ml() {
+                padding-bottom: 8%;
+            }
+
+            p {
+                font-family: "Zen Kaku Gothic";
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 28px;
+                color: #fff;
+
+                @include mix.ml() {
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+            }
+        }
+
+        &__title {
+            img {
+                margin-top: 30%;
+                margin-bottom: 30px;
+
+                @include mix.ml() {
+                    margin-bottom: 50px;
+                    margin-top: 25%;
+                }
+            }
+
+            @include mix.ml() {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+
+    .teaser__warp2__content{
+        margin-bottom: 10%;
+        img{
+            width: 100%;
+        }
+    }
+
+    .pdf-link{
+        width: 100%;
+        height: 60px;
+        background-color: #C8141D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: #fff 1px solid;
+        margin-top: 30px;
+        a{
+            color: #fff;
+            white-space: nowrap;
+            text-align: center;
+
+        }
+    }
+    .content-teaser2{
+        padding: 0 20px 10%;
+        margin-bottom: 10%;
+    }
+
+}
+
+.infomationBtn {
+    text-align: center;
+    padding-top: 20%;
+    display: flex;
+    justify-content: center;
+    @include mix.ml(){
+        padding-top: 10%;
+    }
+
+    &__btn {
+        background: black;
+        width: 203px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: #00000094;
+        }
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            font-family: "Zen Kaku Gothic";
+
+        }
+    }
+}
+
+.Annai {
+    .red{
+        color: rgb(246, 50, 50);
+    }
+    font-family: "Zen Kaku Gothic";
+
+    .MiryokuHead {
+        .RaceList__header {
+            background: url(https://media.graphassets.com/ZUGWNHmUQnyTXy2z3X0J);
+            background-size: contain;
+            background-color: #000000;
+
+            @include mix.mmq() {
+                background-size: 100%;
+            }
+        }
+    }
+
+    .bt_sp {
+        background-color: #000000;
+        margin-top: 0px;
+        position: relative;
+        display: flex;
+
+        @include mix.mmq() {
+            display: none;
+        }
+
+    }
+
+    .bt_pc {
+        display: none;
+
+        @include mix.mmq() {
+            margin-bottom: 5%;
+            background-color: #000000;
+            margin-top: -20px;
+            position: relative;
+            display: flex;
+            padding-top: 3%;
+
+            img {
+                width: 100%;
+                margin-bottom: -5px;
+
+            }
+        }
+    }
+
+    .teaser__warp2__content {
+        padding: 0 15px 8%;
+
+        p {
+            letter-spacing: -0.2px;
+        }
+    }
+
+    .teaser__warp2__title {
+        padding-top: 80px;
+        margin-bottom: 40px;
+
+        p {
+            color: #E7C339;
+            font-size: 28px;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+
+    .teaser__warp2__title.title02 {
+        padding-top: 40px;
+        margin-bottom: 15px;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .pink {
+        color: #FF8C8C;
+    }
+
+    .pink.dekaku {
+        font-size: 20px;
+        color: rgb(246, 50, 50);
+        font-weight: 600;
+    }
+
+    .rigth {
+        text-align: end;
+        margin-right: -10px;
+        margin-top: 10px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-top: 10px;
+    }
+
+    .table01 {
+        width: 100%;
+
+    }
+
+    .table01 tr {
+        &:nth-child(1) {
+            th {
+                &:nth-child(2) {
+                    padding: 0.5rem 3rem;
+                    text-align: center;
+                }
+
+                &:nth-child(3) {
+                    padding: 0.5rem 3rem;
+                    text-align: center;
+                }
+
+            }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4) {
+            th {
+                &:nth-child(2) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .table01 th {
+        padding: 1rem;
+        font-weight: bold;
+        border: solid 1px #ccc;
+
+    }
+
+    .table01 td {
+        padding: 1rem;
+        border: solid 1px #ccc;
+        background-color: #f6f6f6;
+        text-align: center;
+    }
+
+    .bg-theme02 {
+        background-color: #ffe100;
+    }
+
+    .text-nowrap {
+        white-space: nowrap !important;
+    }
+
+    .bg-light {
+        --bs-bg-opacity: 1;
+        background-color: #f6f6f6;
+        ;
+    }
+
+    .width01 {
+        width: 75px;
+    }
+
+    .table01 .left {
+        text-align: left;
+    }
+
+    .DLlink {
+        display: flex;
+        margin-top: 7px;
+
+        a {
+            color: #ACFFFA;
+            text-decoration: underline;
+            font-family: "Zen Kaku Gothic";
+
+        }
+    }
+
+    .DLlink.last {
+        margin-bottom: 15px;
+    }
+
+    .IMGlink {
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+
+    .HomeLink {
+        margin-top: 20%;
+
+        @include mix.mmq() {
+            margin-top: 15%;
+        }
+
+        @include mix.ml {
+            margin-top: 0%;
+            padding-bottom: 10%;
+        }
+    }
+
+    .nopc {
+        @media screen and (min-width:600px) {
+            opacity: 0;
+        }
+    }
+}
+
+.teaser-title {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.senshu {
+    text-align: center;
+
+    img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .kaisai,
+    .form {
+        font-size: 14px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    a {
+        font-family: "Zen Kaku Gothic";
+        font-size: 16px;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+}
+
+.teaser-1 {
+    padding: 0 45px 10%;
+    margin-top: 2%;
+}
+
+.teser-time {
+    padding: 30px 15px 15%;
+    text-align: center;
+    img {
+        width: 100%;
+        max-width: 750px;
+    }
+}
+
+.teaser-top-btn {
+
+    margin: 15% auto 12%;
+    @include mix.mmq(){
+        margin: 7% auto 12%;
+    }
+    ul {
+        max-width: 750px;
+        padding: 0 10px 0%;
+        grid-gap: 0;
+        margin: 0 auto;
+        grid-gap: 5px;
+
+        li {
+            background-color: #C8141D;
+            border: none;
+        }
+    }
+
+
+}
+
+.top-btn.teaser-top-btn .top-btn__btn{
+    border: none;
+    padding: 7px;
+    grid-template-columns: 85% 10%;
+    p{
+        font-family: "Zen Kaku Gothic";
+    }
+}
+
+.top-btn.teaser-top-btn ul {
+    grid-gap: 15px 8px;
+}
+
+.teaser .bt-sp2 {
+    margin-top: 0px;
+}
+
+.teaser .bt-cp2 {
+    img {
+        margin-bottom: -20px;
+    }
+}
+
+.teaser .bt_pc1{
+    margin-top: 0;
+}
+
+.on-click{
+    display: none;
+}
+.no-margintop{
+    img{
+        margin-top: 30px;
+    }
+}
+.teaser__warp2__title{
+    img{
+        width: 100%;
+    }
+}
+
+.teaser .teaser__warp2__content{
+    .teaser__warp2__title {
+      
+        img{
+            width: unset;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            @include mix.mmq(){
+                margin-bottom: 20px;
+            }
+          
+        }
+    }
+}
+.more-margin{
+   margin-top: 20%;
+    
+}
+
+.teaser.event{
+   
+    .MiryokuHead{
+        .RaceList__header{
+            background: url(https://media.graphassets.com/DshTqEoQL6e1CP8VtUrV);
+            background-size: contain;
+            @include mix.mmq(){
+                background-size: cover;
+            }
+            .smaller{
+                margin-top: 10px;
+                font-size: 20px;
+                @include mix.mmq(){
+                    font-size: 51px;
+                }
+            }
+        }
+    }
+
+    .bt_sp{
+       @include mix.mmq(){
+        margin-top: 0;
+       }
+    }
+   
+    .teaser-title{
+        margin-top: 20%;
+        text-align: center;
+        margin-bottom: 10%;
+        img{
+            width: 100%;
+            @include mix.mmq(){
+                width: unset;
+            }
+        }
+    }
+}
+.event-data{
+   
+    h4{
+        font-size: 28px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+.teaser .bt_sp.margin-top10{
+    margin-top: -10%;
+}
+.teaser .bt_sp.bt_sp1{
+    @include mix.mmq(){
+        margin-top: 0;
+        padding-bottom: 70px;
+    }
+}
+
+.Info__content a{
+    color: blue;
+    font-weight: bold;
+    text-align: left;
+}
+.senshu__main__text{
+    p{
+        text-align: left;
+    }
+}
+.senshu__main.sec-2{
+    margin-top: 20px;
+    &:first-child{
+
+        margin-top: 0;
+        @include mix.mmq(){
+            margin-top: 20px;
+        }
+        img{
+            margin-top: 0;
+            @include mix.mmq(){
+                margin-top: 30px;
+            }
+        }
+    }
+    img{
+        width: 80%;
+    }
+}
+.senshu.sec-2{
+    display: grid;
+    @include mix.mmq(){
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+}
+
+.teaser__warp2__content.content-teaser2{
+    .commingSoon{
+        margin: 40px 0;
+       p{
+        font-size: 28px;
+       }
+    }
+}
+
+.teaser__warp2__title.no-margintop{
+    text-align: center;
+}
+
+.homeTopic__vidwrap.vid2{
+    margin-bottom: 40px;
+}

@@ -1,0 +1,81 @@
+@use "./styles/config/mixins" as mix;
+
+
+#root{
+ height: 100%
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+div{
+  padding: 0;
+  margin: 0;
+}
+main{
+ padding-top: 0px;
+ padding-top: 0px;
+ margin-top: 69px;
+ background-color: white;
+ background: white;
+
+
+}
+p,a,h3,h4{
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-display: swap;
+  color: #2B231F;
+  font-weight: 500;
+}
+p{
+  font-size: 16px;
+  line-height: 1.5;
+  @include mix.xl(){
+    font-size: 18px;
+  }
+}
+
+.seemore{
+  color: #2B231F;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  z-index: 0;
+  position: relative;
+  @include mix.ml(){
+    font-size: 18px;
+  }
+}
+.myReact-icons{
+  color: #2B231F;
+  font-size: 18px;
+  margin-top: 2px;
+  margin-left: 3px;
+
+}
+.CONTENT{
+  max-width: 750px;
+  margin: 0 auto;
+}
+#title{
+
+    @include mix.xl(){
+      transform: scale(1.4);
+    }
+  
+}
+
+.ComingSoon{
+  p{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
